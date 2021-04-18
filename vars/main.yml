@@ -1,0 +1,17 @@
+---
+# vars file for setup_vpc
+aws_access_key: "AKIARLSHBULWCIVNDWZA"
+aws_secret_key: "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" 
+vpc_title: "k8s Wordpress cluster"
+vpc_name: "{{ vpc_title }} vpc" 
+internetG_name: "{{ vpc_title }} internetG"
+subnet_name: "{{ vpc_title }} subnet" 
+SC_name: "{{ vpc_title }} security group" 
+route_table_name: "{{ vpc_title}} route table"
+vpcCidrBlock: '10.0.0.0/16'
+subNetCidrBlock: '10.0.1.0/24' 
+portCidrBlock: '0.0.0.0/0' 
+destinationCidrBlock: '0.0.0.0/0' 
+state: "present" 
+zone: "ap-south-1a" 
+region: "ap-south-1"
